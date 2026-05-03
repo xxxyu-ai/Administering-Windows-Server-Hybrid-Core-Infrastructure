@@ -3,7 +3,7 @@
 This repository contains my hands-on labs, notes, and progress for AZ-800.
 
 ## 🔵 Identity & Hybrid Management
-- [LAB 01: Manage Active Directory Domain Services](./LAB_01_Manage_AD_DS.md)
+- [LAB 01: Manage Active Directory Domain Services](./AZ800/LAB_01_Manage_AD_DS.md)
 - [LAB 02: Implementing integration between AD DS and Microsoft Entra ID](./LAB_02_Implementing_Integration_Between_AD_DS_and_Microsoft_Entra_ID.md) [WIP]
 - [LAB 03: Cleaning up](./LAB_03_Cleaning_Up.md) [WIP]
 
