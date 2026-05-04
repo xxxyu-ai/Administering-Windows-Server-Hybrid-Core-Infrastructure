@@ -1,6 +1,6 @@
 # AZ-800: Administering Windows Server Hybrid Core Infrastructure
 
-## Lab: Using Windows Admin Center in hybrid scenarios
+## Lab4: Using Windows Admin Center in hybrid scenarios
 
 This lab focused on using Windows Admin Center in a hybrid environment, deploying Azure resources with ARM templates, and verifying that Windows Admin Center works consistently across on-premises and Azure-managed systems.
 
