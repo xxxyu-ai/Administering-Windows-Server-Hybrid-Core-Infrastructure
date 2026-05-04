@@ -3,7 +3,7 @@
 This repository contains my hands-on labs, notes, and progress for AZ-800.
 
 ## 🛡️ Identity & Hybrid Management
-- [LAB 01: Manage Active Directory Domain Services](./AZ-800/LAB_01_Manage_AD_DS.md)
+- [LAB 01: Manage Active Directory Domain Services](./AZ-800/LAB_01-Manage_Active_Directory_Domain_Services.md)
 - [LAB 02: Manage Windows Server in a Hybrid Environment](./AZ-800/LAB_02_Hybrid_Server_Management.md)
 
 ## 💾 Storage & File Services
