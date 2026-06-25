@@ -24,6 +24,10 @@ In this task, I connected to the Azure subscription and enabled Microsoft Defend
 
 ---
 
+<img width="1163" height="767" alt="lab6 e1-1" src="https://github.com/user-attachments/assets/8c382e0a-ce98-4261-b371-9399f8f4c184" />
+
+---
+
 ### Task 2: Generate an ARM template and parameters files by using the Azure portal
 In this task, I created the initial Azure VM configuration in the portal so that Azure could generate an ARM template and parameter file.
 
@@ -59,6 +63,10 @@ In this task, I created the initial Azure VM configuration in the portal so that
 
 ---
 
+<img width="1133" height="792" alt="lab6 e1-2" src="https://github.com/user-attachments/assets/39fb5c5c-c0bc-400a-8e47-e340c74fd2f3" />
+
+---
+
 ### Task 3: Download the ARM template and parameters files from the Azure portal
 In this task, I downloaded the generated template package and saved it in the lab file folder for later use.
 
@@ -73,9 +81,7 @@ In this task, I downloaded the generated template package and saved it in the la
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the Defender for Cloud enhanced security page, the Review + Create page for the VM, and the downloaded ARM template files in the lab folder.*
+<img width="1117" height="678" alt="lab6 e1-3" src="https://github.com/user-attachments/assets/f5e04399-a881-4af4-90c9-42e52e82df0d" />
 
 ---
 
