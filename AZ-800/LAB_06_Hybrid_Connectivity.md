@@ -109,6 +109,10 @@ In this task, I reviewed the exported ARM template and parameters file that were
 
 ---
 
+<img width="1188" height="817" alt="lab6 e2-1" src="https://github.com/user-attachments/assets/cdf28b85-1fcd-4675-8276-f400edeb26b3" />
+
+---
+
 ### Task 2: Add an Azure VM extension section to the existing template
 In this task, I added a Custom Script Extension resource to the ARM template so the VM could be configured automatically during deployment.
 
@@ -153,9 +157,7 @@ In this task, I added a Custom Script Extension resource to the ARM template so 
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the edited template.json file showing the Custom Script Extension section added under the resources array.*
+<img width="947" height="517" alt="lab6 e2-2" src="https://github.com/user-attachments/assets/eff3de1a-23e0-4e49-a690-b57a34dc5d01" />
 
 ---
 
@@ -186,6 +188,10 @@ In this task, I deployed the Azure VM from the modified ARM template in the Azur
 
 ---
 
+<img width="1118" height="660" alt="lab6 e3-1" src="https://github.com/user-attachments/assets/53582e91-c25c-4174-bcb6-b41f832cf93d" />
+
+---
+
 ### Task 2: Review results of the Azure VM deployment
 In this task, I reviewed the deployed resources and verified that the Custom Script Extension completed successfully.
 
@@ -204,9 +210,7 @@ In this task, I reviewed the deployed resources and verified that the Custom Scr
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the custom deployment page, the resource group overview, the VM extension status, and the deployment details showing the Microsoft.Template record.*
+<img width="1121" height="695" alt="lab6 e3-2" src="https://github.com/user-attachments/assets/0b4b2d90-2edc-4d66-adec-1993ad79bbf0" />
 
 ---
 
@@ -236,6 +240,10 @@ In this task, I confirmed that Microsoft Defender for Cloud enhanced security fe
 
 ---
 
+<img width="1143" height="798" alt="lab6 e4-1" src="https://github.com/user-attachments/assets/89a3e3fa-9fc3-4d3b-bfc5-87028b1f70c2" />
+
+---
+
 ### Task 2: Review the Just-in-time VM access settings
 In this task, I reviewed the JIT VM access configuration pages in Microsoft Defender for Cloud.
 
@@ -255,9 +263,7 @@ In this task, I reviewed the JIT VM access configuration pages in Microsoft Defe
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the Microsoft Defender for Cloud page showing enhanced security enabled and the Just-in-time VM access page with the three tabs.*
+<img width="1226" height="716" alt="lab6 e4-2" src="https://github.com/user-attachments/assets/5d5e36ba-bf68-4dfb-85ad-6f10a28b8a21" />
 
 ---
 
@@ -298,6 +304,10 @@ In this task, I created a network security group and added an inbound rule to al
 
 ---
 
+<img width="1161" height="717" alt="lab6 e5-1" src="https://github.com/user-attachments/assets/b47b1c26-9c12-4f56-879a-6338ca96cd6e" />
+
+---
+
 ### Task 2: Configure inbound HTTP access to an Azure VM
 In this task, I associated the NSG with the VM network interface and assigned a public IP address so the web page could be reached over HTTP.
 
@@ -315,6 +325,10 @@ In this task, I associated the NSG with the VM network interface and assigned a 
 
 ---
 
+<img width="1167" height="412" alt="lab6 e5-2" src="https://github.com/user-attachments/assets/80a145fc-5c15-4aaf-b750-9b5a633446ba" />
+
+---
+
 ### Task 3: Trigger re-evaluation of the JIT status of an Azure VM
 In this task, I forced Microsoft Defender for Cloud to re-evaluate the VM so it would appear in the JIT configuration list.
 
@@ -327,6 +341,10 @@ In this task, I forced Microsoft Defender for Cloud to re-evaluate the VM so it 
 - Enabled **just-in-time VM access**.
 - Opened Microsoft Defender for Cloud.
 - Verified that `az800L06-vm0` appeared on the **Configured** tab.
+
+---
+
+<img width="1167" height="696" alt="lab6 e5-3" src="https://github.com/user-attachments/assets/e9de6cc5-3599-49bf-8590-952df555550c" />
 
 ---
 
@@ -349,9 +367,7 @@ In this task, I requested JIT access and connected to the Azure VM through Remot
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the NSG creation, HTTP test page, JIT configuration in Defender for Cloud, and the successful Remote Desktop connection using JIT access.*
+<img width="1103" height="782" alt="lab6 e5-4" src="https://github.com/user-attachments/assets/d5d7debf-e7a2-4cbb-8422-6cbe1e3e1a6c" />
 
 ---
 
@@ -381,6 +397,10 @@ In this task, I opened a PowerShell session in Azure Cloud Shell.
 
 ---
 
+<img width="1147" height="718" alt="lab6 e6" src="https://github.com/user-attachments/assets/85267ff1-6be7-4200-88f0-68cf58f15dc6" />
+
+---
+
 ### Task 2: Identify all Azure resources provisioned in the lab
 In this task, I listed and deleted the resource groups created throughout the lab.
 
@@ -398,12 +418,6 @@ Get-AzResourceGroup -Name 'AZ800-L06*' | Remove-AzResourceGroup -Force -AsJob
 - Confirmed that all matching resource groups were listed.
 - Started asynchronous deletion of all matching resource groups.
 - Noted that deletion continues in the background because of the `-AsJob` parameter.
-
----
-
-### Evidence
-> **[Picture]**
-> *Capture Cloud Shell showing the resource group query and the deletion command running as a background job.*
 
 ---
 
