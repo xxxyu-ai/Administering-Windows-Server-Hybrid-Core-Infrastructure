@@ -139,12 +139,6 @@ Get-AzResourceGroup -Name 'AZ800-L08*' | Remove-AzResourceGroup -Force -AsJob
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the ARM deployment, VNet peering, Network Watcher results, route table configuration, and cleanup command execution.*
-
----
-
 ### Professional Insight
 - **Hub-and-Spoke Design:** This topology centralizes routing and security controls.
 - **UDR-Based Routing:** User-defined routes let you override default Azure system routes for controlled traffic flow.
@@ -227,12 +221,6 @@ nslookup www.<domain name> <Name server 1>
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the private DNS zone with auto-registered records, the Network Watcher connectivity test, the public DNS zone and A record, and the nslookup output.*
-
----
-
 ### Professional Insight
 - **Private DNS Zones:** Azure private DNS zones simplify internal name resolution across linked virtual networks.
 - **Auto Registration:** Auto-registration reduces manual record maintenance for Azure VMs.
@@ -274,12 +262,6 @@ Get-AzResourceGroup -Name 'AZ800-L08*' | Remove-AzResourceGroup -Force -AsJob
 - Confirmed that all matching resource groups were listed.
 - Started asynchronous deletion of the lab resources.
 - Noted that deletion continues in the background because of the `-AsJob` parameter.
-
----
-
-### Evidence
-> **[Picture]**
-> *Capture Cloud Shell showing the resource group query and the deletion command running as a background job.*
 
 ---
 
