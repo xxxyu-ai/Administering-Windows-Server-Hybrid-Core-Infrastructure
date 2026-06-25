@@ -50,12 +50,6 @@ In this task, I validated DFS namespace and replication group behavior by compar
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the DFS namespace, replication group, folder targets, and the replicated file appearing on both SEA-SVR1 and SEA-SVR2.*
-
----
-
 ### Professional Insight
 - **DFS Replication:** DFS-R is useful for keeping file shares synchronized across servers.
 - **Namespace Management:** DFS namespaces provide a consistent path for users regardless of the backing server.
@@ -124,12 +118,6 @@ In this task, I created the Azure File Sync resource and a sync group tied to th
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the storage account and file share creation, the mounted Z: drive, the snapshot restore, and the File Sync service with the Sync1 group.*
-
----
-
 ### Professional Insight
 - **Azure File Shares:** Azure file shares provide cloud-based SMB storage that can support hybrid file workflows.
 - **Snapshots:** Share snapshots are useful for point-in-time restore and validation.
@@ -193,12 +181,6 @@ In this task, I removed DFS Replication and completed the migration by adding SE
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the File Sync agent installation, server registration, server endpoint creation, and the removal of the DFS replication group.*
-
----
-
 ### Professional Insight
 - **Migration Strategy:** Azure File Sync can replace DFS Replication while preserving access to synchronized file data.
 - **Server Registration:** A server must be registered with the Storage Sync Service before a server endpoint can be created.
@@ -251,12 +233,6 @@ Invoke-StorageSyncCloudTiering -Path S:\Data
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the replicated file on both servers, the cloud tiering settings in Azure portal, the PowerShell tiering commands, and the file attributes showing tiered files.*
-
----
-
 ### Professional Insight
 - **Replication Validation:** Confirming that changes appear on both servers proves that Azure File Sync is working correctly.
 - **Cloud Tiering:** Tiering helps keep frequently used data local while moving cooler data to Azure.
@@ -302,12 +278,6 @@ In this task, I deliberately created a file conflict to observe how Azure File S
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the Azure File Sync activity graphs, the folder sync traffic, and the conflict files created during the Demo.txt test.*
-
----
-
 ### Professional Insight
 - **Monitoring:** The Azure portal provides useful sync activity graphs for validating replication traffic.
 - **Conflict Handling:** Azure File Sync preserves conflicting edits by renaming the conflict copy instead of silently discarding data.
@@ -333,12 +303,6 @@ In this task, I removed the Azure File Sync resources in the required order and 
 - Confirmed that all Azure File Sync server registrations were removed.
 - Confirmed that the cloud endpoint and sync group were deleted before removing the Storage Sync Service.
 - Confirmed that the Azure storage account and resource group were removed successfully.
-
----
-
-### Evidence
-> **[Picture]**
-> *Capture the Storage Sync Service cleanup steps, the removal of registered servers, the deletion of the sync group, and the final resource group deletion.*
 
 ---
 
