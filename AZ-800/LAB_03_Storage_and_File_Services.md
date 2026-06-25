@@ -28,6 +28,10 @@ Start-Process -FilePath '.\WindowsAdminCenter.exe' -ArgumentList '/VERYSILENT' -
 
 ---
 
+<img width="972" height="510" alt="lab3 e1-1" src="https://github.com/user-attachments/assets/de3fa56f-bc05-4f1c-8f80-bc48f9d4b4de" />
+
+---
+
 ### Task 2: Add servers for remote administration
 In this task, I connected to Windows Admin Center and added SEA-DC1 as a managed server.
 
@@ -39,6 +43,10 @@ In this task, I connected to Windows Admin Center and added SEA-DC1 as a managed
 - Confirmed the All connections page displayed `sea-adm1.contoso.com`.
 - Added `sea-dc1.contoso.com` to the connection list.
 - Signed in with the instructor-provided credentials when prompted.
+
+---
+
+<img width="1133" height="617" alt="lab3 e1-2" src="https://github.com/user-attachments/assets/dc51b73a-1772-4b3f-9756-a180d637cc83" />
 
 ---
 
@@ -60,6 +68,10 @@ In this task, I installed the DNS extension and used Windows Admin Center to man
 
 ---
 
+<img width="1175" height="726" alt="lab3 e1-3" src="https://github.com/user-attachments/assets/5710eda7-11f4-42f6-9297-e95f1e356bcf" />
+
+---
+
 ### Task 4: Verify remote administration
 In this task, I used Windows Admin Center to verify remote management features on SEA-DC1.
 
@@ -74,6 +86,10 @@ In this task, I used Windows Admin Center to verify remote management features o
 #### 3. Remote Desktop Validation
 - Connected to `sea-dc1.contoso.com` through Remote Desktop.
 - Disconnected from the remote session successfully.
+
+---
+
+<img width="973" height="692" alt="lab3 e1-4" src="https://github.com/user-attachments/assets/52dd0017-aa57-427f-b9f0-80abfb4ceffa" />
 
 ---
 
@@ -98,12 +114,6 @@ Get-Service -Name AppIDSvc
 ```
 - Confirmed the service was started successfully.
 - Verified the service status changed to Running.
-
----
-
-### Evidence
-> **[Picture]**
-> *Capture Windows Admin Center showing the added server, DNS extension, DNS zone records, remote desktop session, and PowerShell output for the AppIDSvc service.*
 
 ---
 
