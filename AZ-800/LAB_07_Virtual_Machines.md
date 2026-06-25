@@ -27,6 +27,10 @@ In this task, I installed the DHCP role on SEA-SVR1 and prepared Windows Admin C
 
 ---
 
+<img width="1147" height="697" alt="lab7 e1-1" src="https://github.com/user-attachments/assets/d584be36-3092-4045-8d4f-b1536f2410fa" />
+
+---
+
 ### Task 2: Authorize the DHCP server
 In this task, I completed the DHCP post-install configuration so the server could serve addresses in Active Directory.
 
@@ -38,6 +42,10 @@ In this task, I completed the DHCP post-install configuration so the server coul
 - Opened Server Manager notifications.
 - Completed DHCP configuration successfully.
 - Confirmed the server was authorized.
+
+---
+
+<img width="1026" height="820" alt="lab7 e1-2" src="https://github.com/user-attachments/assets/39e5d49e-7170-4ab6-b381-b12c840e6eb3" />
 
 ---
 
@@ -60,6 +68,10 @@ In this task, I created the ContosoClients IPv4 scope and configured the DNS ser
 - Created the scope successfully.
 - Added the DNS server scope option.
 - Added authorized servers in the DHCP console as required.
+
+---
+
+<img width="1117" height="813" alt="lab7 e1-3" src="https://github.com/user-attachments/assets/2f7a9fbd-f6e7-4e0e-ad93-e4b319057563" />
 
 ---
 
@@ -103,12 +115,6 @@ In this task, I changed the client configuration to DHCP and verified failover b
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the DHCP role installation, scope creation, failover relationship, lease information, and the lease renewal showing failover from SEA-SVR1 to SEA-DC1.*
-
----
-
 ### Professional Insight
 - **High Availability:** DHCP failover provides continuity when one DHCP server becomes unavailable.
 - **Administrative Efficiency:** Windows Admin Center and the DHCP console make DHCP provisioning and management easier.
@@ -129,6 +135,10 @@ In this task, I installed the DNS role on SEA-SVR1 and prepared the DNS manageme
 - Installed the DNS role using **Roles & features**.
 - Installed the **DNS PowerShell** tools from the DNS tool.
 - Confirmed the DNS extension was available in Windows Admin Center.
+
+---
+
+<img width="1146" height="647" alt="lab7 e2-1" src="https://github.com/user-attachments/assets/ad1bd783-81d9-4cbf-9715-3d803bdfed6b" />
 
 ---
 
@@ -231,12 +241,6 @@ In this task, I verified that DNS resolution changed based on whether the client
 - Confirmed the DNS policy returned the head office IP for head office clients.
 - Confirmed clients outside the subnet received the alternate IP address.
 - Restored the original IP configuration of SEA-ADM1.
-
----
-
-### Evidence
-> **[Picture]**
-> *Capture the DNS role installation, TreyResearch.net zone creation, forwarding settings, conditional forwarder, DNS policy commands, and the two different Resolve-DnsName results.*
 
 ---
 
