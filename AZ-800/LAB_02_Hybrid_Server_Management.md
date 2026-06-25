@@ -37,6 +37,10 @@ In this task, I added a custom domain to Microsoft Entra ID to prepare the tenan
 
 ---
 
+<img width="1151" height="725" alt="lab2 e1-1" src="https://github.com/user-attachments/assets/2fe82b8d-d275-40dc-b434-61fcf4c65ff8" />
+
+---
+
 ### Task 2: Create a user with the Global Administrator role
 In this task, I created a new user account and assigned the Global Administrator role in Microsoft Entra ID.
 
@@ -52,6 +56,10 @@ In this task, I created a new user account and assigned the Global Administrator
 - Confirmed the new user was created successfully.
 - Recorded the generated password for later sign-in use.
 - Verified the user had the required administrative role.
+
+---
+
+<img width="1117" height="663" alt="lab2 e1-2" src="https://github.com/user-attachments/assets/5b2f6c97-cb68-4f08-a2ee-917c4b9b7ab2" />
 
 ---
 
@@ -74,9 +82,7 @@ In this task, I signed in as the newly created Global Administrator and changed 
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the Microsoft Entra tenant overview, the custom domain page, and the created Global Administrator user account.*
+<img width="1152" height="706" alt="lab2 e1-3" src="https://github.com/user-attachments/assets/97dd690d-79f9-4dc2-b573-45c84d0215ec" />
 
 ---
 
@@ -100,6 +106,10 @@ In this task, I downloaded and prepared the IdFix tool for identifying and corre
 #### 2. Validation
 - Confirmed the IdFix tool was available for use.
 - Verified the tool could be launched from the lab environment.
+
+---
+
+<img width="1036" height="688" alt="lab2 e2-1" src="https://github.com/user-attachments/assets/816f20ed-b1f7-454a-9150-4968adf089a4" />
 
 ---
 
@@ -127,12 +137,6 @@ In this task, I ensured that user UPNs matched the Microsoft Entra tenant’s cu
 #### 2. Validation
 - Confirmed user UPNs were aligned with the tenant domain.
 - Verified that the directory was ready for Microsoft Entra Connect configuration.
-
----
-
-### Evidence
-> **[Picture]**
-> *Capture the IdFix results window showing the directory issues identified and any corrected user attributes.*
 
 ---
 
@@ -174,9 +178,7 @@ In this task, I downloaded Microsoft Entra Connect, installed it on SEA-ADM1, an
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the Microsoft Entra Connect installation wizard showing the express settings, sign-in configuration, and ready-to-configure page.*
+<img width="1162" height="767" alt="lab2 e3" src="https://github.com/user-attachments/assets/f8f93578-36d6-40b9-b6fe-15ccabb6718d" />
 
 ---
 
@@ -205,6 +207,10 @@ In this task, I confirmed that directory synchronization was working by reviewin
 
 ---
 
+<img width="1132" height="803" alt="lab2 e4-1" src="https://github.com/user-attachments/assets/efd513e4-e883-49c9-bd55-2163e267efee" />
+
+---
+
 ### Task 2: Verify synchronization in the Synchronization Service Manager
 In this task, I reviewed synchronization activity and connector information in the Synchronization Service Manager.
 
@@ -217,6 +223,10 @@ In this task, I reviewed synchronization activity and connector information in t
 - Reviewed recent sync operations in the Operations tab.
 - Confirmed that two connectors were present.
 - Verified that one connector represented the on-premises AD DS environment and the other represented Microsoft Entra ID.
+
+---
+
+<img width="1136" height="696" alt="lab2 e4-2" src="https://github.com/user-attachments/assets/10c8992e-e9f6-44d2-a0cf-93a7bfbb08d2" />
 
 ---
 
@@ -233,6 +243,10 @@ In this task, I updated an existing Active Directory user so that the change cou
 - Opened the user properties in Active Directory Users and Computers.
 - Updated the **Job Title** field under the Organization tab.
 - Confirmed the change was saved successfully.
+
+---
+
+<img width="1112" height="791" alt="lab2 e4-3" src="https://github.com/user-attachments/assets/79437f6f-9a00-467e-a964-db147835c260" />
 
 ---
 
@@ -267,6 +281,10 @@ Start-ADSyncSyncCycle
 
 ---
 
+<img width="1096" height="718" alt="lab2 e4-4" src="https://github.com/user-attachments/assets/89e686b2-7ce4-4a34-9125-1fd326c55c0d" />
+
+---
+
 ### Task 6: Verify changes in Microsoft Entra ID
 In this task, I verified that the Active Directory updates were reflected in Microsoft Entra ID after synchronization completed.
 
@@ -285,10 +303,8 @@ In this task, I verified that the Active Directory updates were reflected in Mic
 - Confirmed the newly created user account was also present after synchronization.
 
 ---
+<img width="1152" height="812" alt="lab2 e4-5" src="https://github.com/user-attachments/assets/c2765386-566b-49d0-94a5-42d463c2f016" />
 
-### Evidence
-> **[Picture]**
-> *Capture the Azure portal showing synced users and groups, the Synchronization Service Manager operations, the Active Directory user update, and the Microsoft Entra ID user property pages for Sumesh Rajan and Jordan Mitchell.*
 
 ---
 
@@ -320,6 +336,10 @@ In this task, I activated the Microsoft Entra ID P2 trial and reviewed the passw
 
 ---
 
+<img width="1145" height="656" alt="lab2 e5-1" src="https://github.com/user-attachments/assets/7e7f9624-939d-4c47-a190-af05b01cf03e" />
+
+---
+
 ### Task 2: Enable password writeback in Microsoft Entra Connect
 In this task, I enabled password writeback in Microsoft Entra Connect so cloud password changes can be written back to Active Directory.
 
@@ -338,6 +358,10 @@ In this task, I enabled password writeback in Microsoft Entra Connect so cloud p
 #### 3. Validation
 - Confirmed the configuration completed successfully.
 - Closed Microsoft Entra Connect after the changes were applied.
+
+---
+
+<img width="1177" height="793" alt="lab2 e5-2" src="https://github.com/user-attachments/assets/90bd7f69-5db2-4f1f-b595-6c7988e211b2" />
 
 ---
 
@@ -363,6 +387,10 @@ In this task, I changed the Microsoft Entra Connect user sign-in method to pass-
 
 ---
 
+<img width="1157" height="781" alt="lab2 e5-3" src="https://github.com/user-attachments/assets/acde7a37-d390-498e-931e-feb8814b4186" />
+
+---
+
 ### Task 4: Verify pass-through authentication in Azure
 In this task, I reviewed the Microsoft Entra Connect status pages in the Azure portal to verify that pass-through authentication was enabled.
 
@@ -376,6 +404,10 @@ In this task, I reviewed the Microsoft Entra Connect status pages in the Azure p
 - Opened the **Seamless single sign-on** page and reviewed the on-premises domain name.
 - Opened the **Passthrough Authentication** page.
 - Reviewed the list of authentication agents registered in the tenant.
+
+---
+
+<img width="1151" height="780" alt="lab2 e5-4" src="https://github.com/user-attachments/assets/c4bc8457-f468-4bec-a555-73150955fa3e" />
 
 ---
 
@@ -419,6 +451,10 @@ Exit-PSSession
 
 ---
 
+<img width="1898" height="788" alt="lab2 e5-5" src="https://github.com/user-attachments/assets/90103d5d-f814-417a-b25a-ea637dc6af79" />
+
+---
+
 ### Task 6: Enable password protection in Azure
 In this task, I enabled password protection in Microsoft Entra ID and configured a custom banned password list for the organization.
 
@@ -436,9 +472,8 @@ In this task, I enabled password protection in Microsoft Entra ID and configured
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the Azure portal showing the password reset and password protection pages, Microsoft Entra Connect configuration pages, and PowerShell output confirming the proxy and DC agent services are running.*
+<img width="1102" height="776" alt="lab2 e5-6" src="https://github.com/user-attachments/assets/e65b40a4-cc03-4a21-b56d-04c777affd2c" />
+
 
 ---
 
@@ -463,6 +498,10 @@ In this task, I removed Microsoft Entra Connect from SEA-ADM1 using Control Pane
 - Used **Uninstall or change a program** to locate Microsoft Entra Connect.
 - Uninstalled the application successfully.
 - Confirmed the components were removed after refresh.
+
+---
+
+<img width="1075" height="777" alt="lab2 e6-1" src="https://github.com/user-attachments/assets/76aab92c-c5e3-48bc-80ce-c5cc8efcbeee" />
 
 ---
 
@@ -498,9 +537,7 @@ Get-MgOrganization | Select-Object DisplayName, OnPremisesSyncEnabled
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture Control Panel showing Microsoft Entra Connect removed and PowerShell showing the Microsoft Graph commands and the disabled directory synchronization status.*
+<img width="1132" height="725" alt="lab2 e6-2" src="https://github.com/user-attachments/assets/c6116bc2-42c0-418e-a517-3a7f28c72898" />
 
 ---
 
