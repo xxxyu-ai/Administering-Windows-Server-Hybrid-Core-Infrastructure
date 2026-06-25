@@ -86,12 +86,6 @@ In this task, I used Windows Admin Center to manage SEA-VM1 and review Hyper-V h
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture Hyper-V Manager showing the private switch, differencing disk, and VM creation, plus Windows Admin Center showing SEA-VM1 management and the virtual switch list.*
-
----
-
 ### Professional Insight
 - **Hyper-V Design:** Using a private switch isolates lab workloads from external network traffic.
 - **Differencing Disks:** Differencing VHDs save space and make lab VM deployment faster when a base image already exists.
@@ -179,12 +173,6 @@ In this task, I used Windows Admin Center to manage Docker containers on SEA-SVR
 #### 3. Validation
 - Confirmed the Containers extension was available in Windows Admin Center.
 - Verified that container management views were accessible from the host.
-
----
-
-### Evidence
-> **[Picture]**
-> *Capture Docker installation, container creation and commit output, and the Windows Admin Center Containers extension showing the available tabs.*
 
 ---
 
