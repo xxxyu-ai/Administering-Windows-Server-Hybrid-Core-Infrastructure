@@ -28,6 +28,10 @@ Get-WindowsFeature -ComputerName SEA-SVR1
 
 ---
 
+<img width="992" height="681" alt="lab1 e1-1" src="https://github.com/user-attachments/assets/ca8b06d8-989a-46ac-8327-86ddad383ecf" />
+
+---
+
 ### Task 2: Prepare the AD DS installation and promote a remote server
 In this task, I prepared SEA-SVR1 for domain controller promotion and completed the promotion by using the generated PowerShell command.
 
@@ -48,6 +52,10 @@ Invoke-Command -ComputerName SEA-SVR1 {Install-ADDSDomainController -NoGlobalCat
 - Confirmed that `SEA-SVR1` restarted after promotion.
 - Verified that `SEA-SVR1` appeared under the AD DS node in Server Manager.
 - Confirmed the warning notification disappeared.
+
+---
+
+<img width="972" height="581" alt="lab1 e1-2" src="https://github.com/user-attachments/assets/5961d7f0-bd3d-44c6-8b83-f1d958b03b8c" />
 
 ---
 
@@ -90,9 +98,7 @@ Add-LocalGroupMember -Group 'Administrators' -Member 'CONTOSO\Ty'
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture Server Manager showing SEA-SVR1 added as a domain controller and the Active Directory Users and Computers console showing the Seattle OU, Ty user, and SeattleBranchUsers group.*
+<img width="1007" height="690" alt="lab1 e1-3" src="https://github.com/user-attachments/assets/ffb898f0-5939-460f-882b-b48393c459ef" />
 
 ---
 
@@ -128,6 +134,7 @@ In this task, I created a new domain GPO named CONTOSO Standards and configured 
 
 ---
 
+
 ### Task 2: Link the GPO
 In this task, I linked the CONTOSO Standards GPO to the Contoso.com domain so the policy would apply at the domain level.
 
@@ -141,6 +148,11 @@ In this task, I linked the CONTOSO Standards GPO to the Contoso.com domain so th
 
 ---
 
+<img width="987" height="768" alt="lab1 e2-2" src="https://github.com/user-attachments/assets/1b852d12-da7e-420b-8efe-3f4d0453fbe8" />
+
+---
+
+
 ### Task 3: Review the effects of the GPO's settings
 In this task, I validated that the CONTOSO Standards GPO applied the expected user restrictions and personalization settings.
 
@@ -153,6 +165,10 @@ In this task, I validated that the CONTOSO Standards GPO applied the expected us
 - Opened **Control Panel** and confirmed the screen saver settings were enforced.
 - Signed in as `CONTOSO\Ty` and verified that the timeout value could not be changed.
 - Ran `regedit` and confirmed the message: `Registry editing has been disabled by your administrator.`
+
+---
+
+<img width="987" height="652" alt="lab1 e2-3" src="https://github.com/user-attachments/assets/4e3931a9-9128-4c8c-9998-57500af123d3" />
 
 ---
 
@@ -172,6 +188,10 @@ In this task, I created a new OU-linked GPO named Seattle Application Override a
 
 ---
 
+<img width="922" height="752" alt="lab1 e2-4" src="https://github.com/user-attachments/assets/4fd28a82-4468-43b6-8aeb-7237bd5dda0c" />
+
+---
+
 ### Task 5: Verify the order of precedence
 In this task, I reviewed Group Policy inheritance to confirm which GPO had higher precedence.
 
@@ -182,6 +202,10 @@ In this task, I reviewed Group Policy inheritance to confirm which GPO had highe
 #### 2. Validation
 - Confirmed the Seattle Application Override GPO had higher precedence.
 - Verified that the OU-level GPO would override the domain-level screen saver timeout setting.
+
+---
+
+<img width="1007" height="780" alt="lab1 e2-5" src="https://github.com/user-attachments/assets/f3bc1eb6-797f-4541-916d-742313cd56e3" />
 
 ---
 
@@ -196,6 +220,10 @@ In this task, I configured security filtering so the Seattle Application Overrid
 #### 2. Validation
 - Confirmed the GPO security filtering list contained only the intended security principals.
 - Verified that computer read access requirements were considered when adding the computer account.
+
+---
+
+<img width="1007" height="817" alt="lab1 e2-6" src="https://github.com/user-attachments/assets/38ef20a7-a2a6-4649-8741-a56eea325811" />
 
 ---
 
@@ -214,9 +242,7 @@ In this task, I used Group Policy Modeling to simulate policy application and ve
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the Group Policy Management console showing the GPO links, security filtering, and the Group Policy Modeling report with Seattle Application Override as the winning GPO.*
+<img width="958" height="672" alt="lab1 e2-7" src="https://github.com/user-attachments/assets/467de365-3a73-4cea-9a58-0356bcd076dd" />
 
 ---
 
