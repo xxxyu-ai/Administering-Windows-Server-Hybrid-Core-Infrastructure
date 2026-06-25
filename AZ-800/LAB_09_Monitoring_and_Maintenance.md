@@ -41,6 +41,10 @@ Get-PSDrive -Name M
 
 ---
 
+<img width="995" height="607" alt="lab9 e1-1" src="https://github.com/user-attachments/assets/5c2269d0-f65d-415c-ac83-3956275d19b5" />
+
+---
+
 ### Task 2: Enable and configure Data Deduplication
 In this task, I enabled Data Deduplication on the M: volume on SEA-SVR3.
 
@@ -55,6 +59,10 @@ In this task, I enabled Data Deduplication on the M: volume on SEA-SVR3.
 - Opened Server Manager and reviewed disks on SEA-SVR3.
 - Enabled Data Deduplication on the M: volume.
 - Confirmed the selected optimization settings.
+
+---
+
+<img width="988" height="667" alt="lab9 e1-2" src="https://github.com/user-attachments/assets/3c9f55d1-3487-4105-b64f-d002156c2d4d" />
 
 ---
 
@@ -86,9 +94,7 @@ Get-DedupMetadata -Volume M: | fl
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the ReFS volume creation, sample file creation, deduplication job output, and the deduplication savings shown in Server Manager.*
+<img width="1167" height="712" alt="lab9 e1-3" src="https://github.com/user-attachments/assets/02efcdb2-eed5-490f-b630-fd04b0421d77" />
 
 ---
 
@@ -135,6 +141,11 @@ New-NetFirewallRule -DisplayName "iSCSITargetOut" -Profile "Any" -Direction Outb
 
 ---
 
+<img width="1026" height="687" alt="lab9 e2-1" src="https://github.com/user-attachments/assets/9bb2f287-c205-4839-8095-ff60f278b4a0" />
+
+---
+
+
 ### Task 2: Connect to and configure iSCSI targets
 In this task, I created two iSCSI virtual disks on SEA-SVR3 and connected to them from SEA-DC1.
 
@@ -166,6 +177,10 @@ iscsicpl
 
 ---
 
+<img width="1000" height="511" alt="lab9 e2-2" src="https://github.com/user-attachments/assets/bd6bf0a7-f50a-4761-83dd-146f80f732f0" />
+
+---
+
 ### Task 3: Verify iSCSI disk configuration
 In this task, I verified that the iSCSI disks appeared on SEA-DC1 and then initialized them for use.
 
@@ -193,6 +208,10 @@ Format-Volume -DriveLetter F -FileSystem ReFS
 
 ---
 
+<img width="1068" height="822" alt="lab9 e2-3" src="https://github.com/user-attachments/assets/b5ec0f77-a0f5-49de-9473-17aeab9e79c1" />
+
+---
+
 ### Task 4: Revert disk configuration
 In this task, I reset the disks on SEA-SVR3 to their original state to prepare for the next exercise.
 
@@ -209,9 +228,7 @@ for ($num = 1; $num -le 4; $num++) { Set-Disk -Number $num -IsOffline $true }
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the iSCSI Target Server installation, the created virtual disks, the initiator connection on SEA-DC1, the disk initialization on SEA-DC1, and the disk reset commands on SEA-SVR3.*
+<img width="1026" height="747" alt="lab9 e2-4" src="https://github.com/user-attachments/assets/8a50ab77-f682-4258-a65d-6b3df5cf017c" />
 
 ---
 
@@ -239,6 +256,10 @@ In this task, I created a new storage pool named SP1 on SEA-SVR3 and brought the
 
 ---
 
+<img width="1040" height="725" alt="lab9 e3-1" src="https://github.com/user-attachments/assets/5f732e2d-ca42-4757-b1dd-35d19ff50b3e" />
+
+---
+
 ### Task 2: Create a volume based on a three-way mirrored disk
 In this task, I created a three-way mirrored virtual disk and formatted it as a ReFS volume.
 
@@ -258,6 +279,10 @@ In this task, I created a three-way mirrored virtual disk and formatted it as a 
 - Created the virtual disk successfully.
 - Created and formatted the ReFS volume.
 - Confirmed the volume was available as drive `T:`.
+
+---
+
+<img width="1015" height="765" alt="lab9 e3-2" src="https://github.com/user-attachments/assets/f70eccda-0b4a-4867-b280-5aaa4ca610df" />
 
 ---
 
@@ -281,6 +306,10 @@ Enable-NetFirewallRule -Group "@FirewallAPI.dll,-28502"
 
 ---
 
+<img width="1020" height="712" alt="lab9 e3-3" src="https://github.com/user-attachments/assets/a0e04f5e-bde7-402b-bad4-e5e939e662ca" />
+
+---
+
 ### Task 4: Disconnect a disk from the storage pool and verify volume availability
 In this task, I added the remaining available disk to the pool and removed one of the original disks to test resiliency.
 
@@ -294,6 +323,10 @@ In this task, I added the remaining available disk to the pool and removed one o
 
 ---
 
+<img width="1040" height="736" alt="lab9 e3-4" src="https://github.com/user-attachments/assets/ad2d1989-735b-48e5-b5d7-a9cce5e755f2" />
+
+---
+
 ### Task 5: Add a disk to the storage pool and verify volume availability
 In this task, I re-scanned the storage pool and returned the removed disk to the pool.
 
@@ -304,6 +337,10 @@ In this task, I re-scanned the storage pool and returned the removed disk to the
 #### 2. Validation
 - Confirmed `TestDocument.txt` was still available after the disk was added back.
 - Verified the storage pool returned to a healthy state.
+
+---
+
+<img width="1017" height="575" alt="lab9 e3-5" src="https://github.com/user-attachments/assets/d2828e92-5187-4ee5-b2ba-5ceb14dabff9" />
 
 ---
 
@@ -325,9 +362,7 @@ for ($num = 1; $num -le 4; $num++) { Set-Disk -Number $num -IsOffline $true }
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the storage pool creation, the three-way mirror virtual disk, the file creation in File Explorer, the disk removal and re-addition, and the cleanup commands.*
+<img width="1011" height="617" alt="lab9 e3-6" src="https://github.com/user-attachments/assets/53c9e6d7-f379-4336-93a7-bd53f807ffef" />
 
 ---
 
@@ -365,6 +400,10 @@ In this task, I prepared SEA-SVR1, SEA-SVR2, and SEA-SVR3 for clustering and Sto
 
 ---
 
+<img width="1111" height="842" alt="lab9 e4-1" src="https://github.com/user-attachments/assets/33294892-9af8-4927-a122-1c77e2c5dd63" />
+
+---
+
 ### Task 2: Create and validate the failover cluster
 In this task, I validated the cluster configuration and created the failover cluster.
 
@@ -381,6 +420,10 @@ In this task, I validated the cluster configuration and created the failover clu
 #### 3. Validation
 - Added the new cluster to Failover Cluster Manager.
 - Confirmed that the cluster was created successfully.
+
+---
+
+<img width="1112" height="795" alt="lab9 e4-2" src="https://github.com/user-attachments/assets/f81ca22e-7480-4936-8749-e2d7565e3e3d" />
 
 ---
 
@@ -445,12 +488,6 @@ Stop-Computer -ComputerName SEA-SVR3 -Force
 - Restarted `SEA-SVR3`.
 - Waited for the alert to clear automatically.
 - Refreshed Windows Admin Center and confirmed all servers became healthy again.
-
----
-
-### Evidence
-> **[Picture]**
-> *Capture the cluster validation, cluster creation, S2D enablement, SOFS role and share creation, the failure test, and the recovery status in Windows Admin Center.*
 
 ---
 
