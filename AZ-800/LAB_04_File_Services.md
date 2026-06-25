@@ -22,6 +22,10 @@ In this task, I used Azure Cloud Shell to deploy a resource group for the lab en
 
 ---
 
+<img width="1115" height="752" alt="lab4 e1-1" src="https://github.com/user-attachments/assets/f85f4b94-a7c7-4daf-97f3-d547c6581599" />
+
+---
+
 ### Task 2: Create an Azure VM by using an Azure Resource Manager template
 In this task, I deployed an Azure VM running Windows Server for use in the hybrid lab.
 
@@ -36,6 +40,10 @@ In this task, I deployed an Azure VM running Windows Server for use in the hybri
 
 ---
 
+<img width="1145" height="682" alt="lab4 e1-2" src="https://github.com/user-attachments/assets/fb0be13e-ddb0-4379-b828-1bd5960959df" />
+
+---
+
 ### Task 3: Add GatewaySubnet to the virtual network
 In this task, I updated the Azure virtual network to support the Windows Admin Center gateway and hybrid connectivity.
 
@@ -47,12 +55,6 @@ In this task, I updated the Azure virtual network to support the Windows Admin C
 #### 2. Validation
 - Confirmed the GatewaySubnet was added successfully.
 - Verified the virtual network was ready for hybrid connectivity scenarios.
-
----
-
-### Evidence
-> **[Picture]**
-> *Capture the Cloud Shell deployment commands, the created resource group, the deployed Azure VM, and the virtual network showing the added GatewaySubnet.*
 
 ---
 
@@ -86,6 +88,10 @@ In this task, I connected Windows Admin Center to the Azure subscription so that
 
 ---
 
+<img width="1172" height="780" alt="lab4 e2-1" src="https://github.com/user-attachments/assets/659340f1-4b11-4ad9-ab7f-2dc08953e376" />
+
+---
+
 ### Task 2: Create an Azure Network Adapter
 In this task, I created an Azure Network Adapter to establish hybrid connectivity between SEA-ADM1 and the Azure virtual network.
 
@@ -107,12 +113,6 @@ In this task, I created an Azure Network Adapter to establish hybrid connectivit
 - Opened the Azure portal.
 - Confirmed that a new virtual network gateway with a name starting with `WAC-Created-vpngw-` was provisioning.
 - Noted that gateway provisioning can take a long time, so I continued to the next exercise without waiting for completion.
-
----
-
-### Evidence
-> **[Picture]**
-> *Capture Windows Admin Center showing Azure registration and Azure Network Adapter settings, and the Azure portal showing the WAC-created virtual network gateway being provisioned.*
 
 ---
 
@@ -194,12 +194,6 @@ In this task, I reviewed the Azure resource group and networking rules created b
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture Cloud Shell showing the provisioning script execution, the generated WAC VM FQDN, and the Azure portal showing the resource group and inbound networking rules.*
-
----
-
 ### Professional Insight
 - **Scripted Deployment:** Using a script makes the Windows Admin Center gateway deployment repeatable and consistent.
 - **Secure Management:** Port 443 supports web access, and port 5986 supports PowerShell remoting over HTTPS.
@@ -225,6 +219,10 @@ In this task, I connected to the Windows Admin Center gateway running in the Azu
 
 ---
 
+<img width="1077" height="812" alt="lab4 e4-1" src="https://github.com/user-attachments/assets/81346c60-5eea-4d68-aa01-cf8baf2e8d09" />
+
+---
+
 ### Task 2: Enable PowerShell Remoting on an Azure VM
 In this task, I enabled Windows Remote Management and PowerShell Remoting on the Azure VM so that it could be managed through Windows Admin Center.
 
@@ -245,6 +243,10 @@ Enable-PSRemoting -Force -SkipNetworkProfileCheck
 
 ---
 
+<img width="1872" height="757" alt="lab4 e4-2" src="https://github.com/user-attachments/assets/146764fc-c9ae-4001-a628-46fd7bd98a56" />
+
+---
+
 ### Task 3: Connect to an Azure VM by using the Windows Admin Center gateway running in Azure VM
 In this task, I connected to the Azure VM through the Windows Admin Center gateway that was deployed in Azure.
 
@@ -260,9 +262,7 @@ In this task, I connected to the Azure VM through the Windows Admin Center gatew
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture the Windows Admin Center gateway in Azure, the PowerShell Remoting configuration on az800l04-vm0, and the successful connection to the Azure VM from the gateway.*
+<img width="1068" height="436" alt="lab4 e4-3" src="https://github.com/user-attachments/assets/2ef0ce1f-32b4-4fd1-8e55-693e0172659a" />
 
 ---
 
@@ -308,9 +308,7 @@ Get-AzResourceGroup -Name 'az800l04*' | Remove-AzResourceGroup -Force -AsJob
 
 ---
 
-### Evidence
-> **[Picture]**
-> *Capture Cloud Shell showing the resource group query and the deletion command running as a background job.*
+<img width="1171" height="732" alt="lab4 e5" src="https://github.com/user-attachments/assets/7f8ae47a-0b22-4614-9360-5520c924a071" />
 
 ---
 
